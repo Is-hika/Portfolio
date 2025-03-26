@@ -3,7 +3,7 @@ document.getElementById('sendMail').addEventListener('click', function() {
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    const mailtoLink = `mailto:tarakkatoch036@gmail.com?subject=Contact from ${name}&body=Name: ${name}%0AEmail: ${email}%0A%0A${message}`;
+    const mailtoLink = `mailto:ishika11082004@gmail.com?subject=Contact from ${name}&body=Name: ${name}%0AEmail: ${email}%0A%0A${message}`;
     window.location.href = mailtoLink;
 });
 
