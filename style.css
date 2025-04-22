@@ -1,0 +1,321 @@
+/* Basic Reset & Body Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa; /* Light background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure footer stays down */
+}
+
+a {
+    text-decoration: none;
+    color: #007bff; /* Default link blue */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dee2e6;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #007bff; /* Match name color */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.8rem;
+}
+
+nav ul li a {
+    color: #495057; /* Subdued nav link color */
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    padding: 3rem 5%; /* Padding around main area */
+    gap: 3rem; /* Space between sidebar and main section */
+    width: 100%;
+    flex-grow: 1; /* Allow main content to take available space */
+    align-items: flex-start; /* Align columns at the top */
+}
+
+/* Profile Sidebar Styles */
+.profile-sidebar {
+    flex-basis: 30%; /* Adjust width percentage as needed */
+    max-width: 350px; /* Max width for sidebar */
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.profile-icon-wrapper {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    border-radius: 50%;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3.5rem; /* Icon size */
+}
+
+/* Make sure this CSS is in your style.css file */
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1rem auto;
+
+    /* --- ADD THIS LINE --- */
+    border: 3px solid #007bff; /* Adjust thickness (3px) and color (#007bff) as needed */
+}
+/* If using an <img> instead of the icon wrapper: */
+/*
+.profile-sidebar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #007bff;
+}
+*/
+
+.profile-sidebar h2 {
+    margin-bottom: 0.3rem;
+    font-size: 1.5rem;
+    color: #212529;
+}
+
+.profile-sidebar .title {
+    color: #6c757d; /* Grayish title color */
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.social-links a {
+    margin: 0 0.6rem;
+    font-size: 1.4rem; /* Social icon size */
+    color: #007bff;
+    transition: color 0.2s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.bio {
+    margin: 1.5rem 0;
+    color: #495057;
+    font-size: 0.9rem;
+    text-align: left; /* Align bio text left as in example */
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.7rem 1.8rem;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+/* Projects & Skills Section Styles */
+.projects-skills {
+    flex-basis: 70%; /* Adjust width percentage */
+}
+
+.projects-skills h3 {
+    margin-bottom: 1.8rem;
+    font-size: 1.4rem;
+    color: #343a40;
+    padding-bottom: 0.5rem;
+    /* Optional: Add a subtle border like in the example */
+    /* border-bottom: 1px solid #e9ecef; */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 1.8rem; /* Space between project cards */
+    margin-bottom: 3rem; /* Space below projects section */
+}
+
+.project-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 1rem; /* Space between icon and text */
+    align-items: flex-start; /* Align icon top with text */
+}
+
+.project-icon {
+    background-color: #e7f3ff; /* Light blue background for icon */
+    color: #007bff;
+    min-width: 45px; /* Fixed width */
+    height: 45px;
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem; /* Icon size */
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.project-details h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #343a40;
+}
+
+.project-details p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 0.75rem;
+}
+
+.project-links a {
+    font-size: 0.9rem;
+    margin-right: 1rem;
+    font-weight: 500;
+    color: #007bff;
+}
+
+.project-links a.live-demo {
+    color: #fd7e14; /* Orange/Reddish color for Live Demo */
+    font-weight: 600;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+/* Skills Section Styles */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow skills to wrap on smaller widths */
+    gap: 1rem; /* Space between skill items */
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem; /* Space between icon and text */
+    background-color: #ffffff;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+.skill-item i {
+    color: #007bff;
+    font-size: 1.3rem; /* Skill icon size */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: auto; /* Push footer to bottom */
+    padding: 1.5rem 5%;
+    border-top: 1px solid #dee2e6;
+    color: #6c757d;
+    font-size: 0.9rem;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+/* Simple Media Query for potential adjustments */
+@media (max-width: 992px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center; /* Center items when stacked */
+    }
+    .profile-sidebar {
+        flex-basis: auto; /* Allow sidebar to take full width */
+        width: 90%; /* Limit width slightly */
+        max-width: 500px; /* Increase max-width when stacked */
+    }
+    .projects-skills {
+        flex-basis: auto; /* Allow section to take full width */
+        width: 90%; /* Match sidebar width */
+    }
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack project cards */
+    }
+     header {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem 2%;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        gap: 0 1rem; /* Add gap between wrapped items */
+    }
+    nav ul li {
+        margin-left: 0; /* Remove left margin when wrapping */
+        margin-bottom: 0.5rem; /* Add bottom margin when wrapped */
+    }
+}
+
+@media (max-width: 768px) {
+     .main-content {
+        padding: 2rem 3%;
+     }
+     .profile-sidebar, .projects-skills {
+        width: 100%;
+     }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishika Kumari - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div class="logo">Ishika Kumari</div>
+        <nav>
+            <ul>
+                <!-- Updated Nav Links -->
+                <li><a href="#profile-sidebar">Profile</a></li>
+                <li><a href="#profile-sidebar">About</a></li> <!-- Points to sidebar with bio -->
+                <li><a href="#skills-heading">Skills</a></li>
+                <li><a href="#projects-heading">Projects</a></li>
+                <!-- Updated Contact Link in Header -->
+                <li><a href="mailto:ishika11082004@gmail.com?subject=Contact%20from%20Portfolio">Contact</a></li>
+                <li><a href="resume.pdf" target="_blank">Resume</a></li> <!-- Updated link -->
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+         <!-- Added id="profile-sidebar" for navigation -->
+        <aside class="profile-sidebar" id="profile-sidebar">
+            <img src="assets/img/Screenshot 2025-04-23 032311.png" alt="Ishika Kumari Profile Picture" class="profile-picture">
+            <h2>Ishika Kumari</h2>
+            <p class="title">Cloud Computing Enthusiast</p>
+            <div class="social-links">
+                 <!-- Updated Social Links -->
+                <a href="https://www.linkedin.com/in/ishika-kumari-5b742b217/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Is-hika" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/isxikamehta?utm_source=qr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="bio">
+                A cloud computing enthusiast with expertise in designing and deploying
+                scalable, secure, and efficient cloud solutions.
+            </p>
+             <!-- Updated Contact Button with mailto: -->
+            <a href="mailto:ishika11082004@gmail.com?subject=Contact%20from%20Portfolio" class="contact-btn">Contact Me</a>
+             <!-- Removed id="contact-button" as it's no longer needed for scroll -->
+        </aside>
+
+        <!-- Added id="projects-skills" for navigation (overall section) -->
+        <section class="projects-skills" id="projects-skills">
+             <!-- Added id="projects-heading" for navigation -->
+            <h3 id="projects-heading">Featured Projects</h3>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <div class="project-details">
+                        <h4>My Docker Dockyard</h4>
+                        <p>A collection of containerized experiments, mastering Docker for scalability.</p>
+                        <div class="project-links">
+                             <!-- Updated Link -->
+                            <a href="https://github.com/Is-hika/DockerExp" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-details">
+                        <h4>Streamlit Dashboard</h4>
+                        <p>Interactive web app for data exploration and visualization.</p>
+                        <div class="project-links">
+                             <!-- Updated Links -->
+                            <a href="https://github.com/Is-hika/Streamlit-Dashboard.git" target="_blank">GitHub</a>
+                            <a href="https://app-dashboard-l9yjsdhgx7e4hn6t8lncbw.streamlit.app/" target="_blank" class="live-demo">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                       <i class="fas fa-ship"></i> <!-- Using a ship icon for Titanic -->
+                    </div>
+                    <div class="project-details">
+                        <h4>Titanic Survival Prediction</h4>
+                        <p>ML model predicting survival chances on the Titanic.</p>
+                        <div class="project-links">
+                             <!-- Updated Links -->
+                            <a href="https://github.com/Is-hika/Titanic-Survivor-prediction" target="_blank">GitHub</a>
+                            <a href="https://titanic-survivor-prediction-jrr5awzttxacuyyachonse.streamlit.app/" target="_blank" class="live-demo">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 4 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="project-details">
+                        <h4>Binary Classification Web App</h4>
+                        <p>ML web app to classify mushrooms as edible or poisonous.</p>
+                        <div class="project-links">
+                             <!-- Updated Links -->
+                            <a href="https://github.com/Is-hika/Binary-classification-web-app" target="_blank">GitHub</a>
+                            <a href="https://binary-classification-web-app-etgyiyc5vvm7trf4nks2cz.streamlit.app/" target="_blank" class="live-demo">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Added id="skills-heading" for navigation -->
+            <h3 id="skills-heading">Top Skills</h3>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <i class="fab fa-aws"></i>
+                    <span>AWS (85%)</span>
+                </div>
+                 <div class="skill-item">
+                    <i class="fab fa-python"></i>
+                    <span>Python (80%)</span>
+                </div>
+                 <div class="skill-item">
+                    <i class="fab fa-docker"></i>
+                    <span>Docker (75%)</span>
+                </div>
+                 <div class="skill-item">
+                    <i class="fas fa-database"></i> <!-- Generic DB icon for MySQL -->
+                    <span>MySQL (80%)</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Ishika Kumari. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
