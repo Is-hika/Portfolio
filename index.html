@@ -51,6 +51,13 @@
         <section class="projects-skills" id="projects-skills">
              <!-- Added id="projects-heading" for navigation -->
             <h3 id="projects-heading">Featured Projects</h3>
+            <!-- **** CSS ADJUSTMENT NEEDED ****
+                 In style.css, target '.projects-grid'
+                 - Change its 'grid-template-columns' to 'repeat(3, 1fr)' (or similar for 3 columns).
+                 - You might need to adjust 'gap' or 'padding'/'margin' on '.project-card'.
+                 - Consider reducing font-size, padding, or icon size within '.project-card' if needed to keep them smaller.
+                 - Add media queries to switch back to 2 or 1 column on smaller screens.
+            -->
             <div class="projects-grid">
                 <!-- Project Card 1 -->
                 <div class="project-card">
@@ -59,9 +66,8 @@
                     </div>
                     <div class="project-details">
                         <h4>My Docker Dockyard</h4>
-                        <p>A collection of containerized experiments, mastering Docker for scalability.</p>
+                        <p>A collection of containerized experiments, mastering Docker.</p> <!-- Shortened description slightly -->
                         <div class="project-links">
-                             <!-- Updated Link -->
                             <a href="https://github.com/Is-hika/DockerExp" target="_blank">GitHub</a>
                         </div>
                     </div>
@@ -75,7 +81,6 @@
                         <h4>Streamlit Dashboard</h4>
                         <p>Interactive web app for data exploration and visualization.</p>
                         <div class="project-links">
-                             <!-- Updated Links -->
                             <a href="https://github.com/Is-hika/Streamlit-Dashboard.git" target="_blank">GitHub</a>
                             <a href="https://app-dashboard-l9yjsdhgx7e4hn6t8lncbw.streamlit.app/" target="_blank" class="live-demo">Live Demo</a>
                         </div>
@@ -90,7 +95,6 @@
                         <h4>Titanic Survival Prediction</h4>
                         <p>ML model predicting survival chances on the Titanic.</p>
                         <div class="project-links">
-                             <!-- Updated Links -->
                             <a href="https://github.com/Is-hika/Titanic-Survivor-prediction" target="_blank">GitHub</a>
                             <a href="https://titanic-survivor-prediction-jrr5awzttxacuyyachonse.streamlit.app/" target="_blank" class="live-demo">Live Demo</a>
                         </div>
@@ -102,12 +106,39 @@
                         <i class="fas fa-code"></i>
                     </div>
                     <div class="project-details">
-                        <h4>Binary Classification Web App</h4>
-                        <p>ML web app to classify mushrooms as edible or poisonous.</p>
+                        <h4>Binary Classification</h4> <!-- Shortened Title -->
+                        <p>ML web app classifying mushrooms (edible/poisonous).</p> <!-- Shortened Description -->
                         <div class="project-links">
-                             <!-- Updated Links -->
                             <a href="https://github.com/Is-hika/Binary-classification-web-app" target="_blank">GitHub</a>
                             <a href="https://binary-classification-web-app-etgyiyc5vvm7trf4nks2cz.streamlit.app/" target="_blank" class="live-demo">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- NEW Project Card 5: DecipherAI -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-brain"></i> <!-- Icon for AI/deciphering -->
+                    </div>
+                    <div class="project-details">
+                        <h4>DecipherAI</h4>
+                        <p>AI-powered text analysis and insights application.</p> <!-- Concise description -->
+                        <div class="project-links">
+                            <a href="https://github.com/Is-hika/DecipherAI" target="_blank">GitHub</a>
+                            <a href="https://decipherai-erairpqhpkafirtynytpyp.streamlit.app/" target="_blank" class="live-demo">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- NEW Project Card 6: Password Prediction -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-key"></i> <!-- Icon for password/security -->
+                    </div>
+                    <div class="project-details">
+                        <h4>Password Predictor</h4> <!-- Clearer title -->
+                        <p>ML model to predict password strength characteristics.</p> <!-- Concise description -->
+                        <div class="project-links">
+                            <a href="https://github.com/Is-hika/AIML-Project" target="_blank">GitHub</a>
+                            <a href="https://aiml-project-6szv6kktbemniqkywxvhvu.streamlit.app/" target="_blank" class="live-demo">Live Demo</a>
                         </div>
                     </div>
                 </div>
